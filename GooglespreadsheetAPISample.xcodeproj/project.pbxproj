@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		766E3FAEE1563AFA1B6C2DC8 /* Pods_GooglespreadsheetAPISample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84E473B3F90CB15F6B7B919 /* Pods_GooglespreadsheetAPISample.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E2DA9B501C8B8E7A00244018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA9B4F1C8B8E7A00244018 /* AppDelegate.swift */; };
 		E2DA9B521C8B8E7A00244018 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA9B511C8B8E7A00244018 /* ViewController.swift */; };
 		E2DA9B551C8B8E7A00244018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DA9B531C8B8E7A00244018 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36A51BF1F7E7D7190B953D9E /* Pods-GooglespreadsheetAPISample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglespreadsheetAPISample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GooglespreadsheetAPISample/Pods-GooglespreadsheetAPISample.debug.xcconfig"; sourceTree = "<group>"; };
+		A84E473B3F90CB15F6B7B919 /* Pods_GooglespreadsheetAPISample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GooglespreadsheetAPISample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB553834212C7784B0DDC60B /* Pods-GooglespreadsheetAPISample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GooglespreadsheetAPISample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GooglespreadsheetAPISample/Pods-GooglespreadsheetAPISample.release.xcconfig"; sourceTree = "<group>"; };
 		E2DA9B4C1C8B8E7A00244018 /* GooglespreadsheetAPISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooglespreadsheetAPISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DA9B4F1C8B8E7A00244018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2DA9B511C8B8E7A00244018 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				766E3FAEE1563AFA1B6C2DC8 /* Pods_GooglespreadsheetAPISample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68914272519E703D13EF6BFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36A51BF1F7E7D7190B953D9E /* Pods-GooglespreadsheetAPISample.debug.xcconfig */,
+				AB553834212C7784B0DDC60B /* Pods-GooglespreadsheetAPISample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC245F957631F2EA07FC637B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A84E473B3F90CB15F6B7B919 /* Pods_GooglespreadsheetAPISample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E2DA9B431C8B8E7A00244018 = {
 			isa = PBXGroup;
 			children = (
 				E2DA9B4E1C8B8E7A00244018 /* GooglespreadsheetAPISample */,
 				E2DA9B4D1C8B8E7A00244018 /* Products */,
+				68914272519E703D13EF6BFD /* Pods */,
+				BC245F957631F2EA07FC637B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2DA9B5E1C8B8E7A00244018 /* Build configuration list for PBXNativeTarget "GooglespreadsheetAPISample" */;
 			buildPhases = (
+				90E0BF0E39B5FFC3B9E5F733 /* Check Pods Manifest.lock */,
 				E2DA9B481C8B8E7A00244018 /* Sources */,
 				E2DA9B491C8B8E7A00244018 /* Frameworks */,
 				E2DA9B4A1C8B8E7A00244018 /* Resources */,
+				E8CAA555B714AB7403E04F4C /* Embed Pods Frameworks */,
+				68F8BB81C9119D1895D4128F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68F8BB81C9119D1895D4128F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GooglespreadsheetAPISample/Pods-GooglespreadsheetAPISample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90E0BF0E39B5FFC3B9E5F733 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8CAA555B714AB7403E04F4C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GooglespreadsheetAPISample/Pods-GooglespreadsheetAPISample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E2DA9B481C8B8E7A00244018 /* Sources */ = {
@@ -245,6 +320,7 @@
 		};
 		E2DA9B5F1C8B8E7A00244018 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A51BF1F7E7D7190B953D9E /* Pods-GooglespreadsheetAPISample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GooglespreadsheetAPISample/Info.plist;
@@ -256,6 +332,7 @@
 		};
 		E2DA9B601C8B8E7A00244018 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB553834212C7784B0DDC60B /* Pods-GooglespreadsheetAPISample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GooglespreadsheetAPISample/Info.plist;
@@ -284,6 +361,7 @@
 				E2DA9B601C8B8E7A00244018 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
